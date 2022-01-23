@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Patrick Hand', sans-serif;
+    color: #0a1417;
+    width: 100%;
+    text-align: center;
+    background-color: #032e42;
+}
+#playerInputs{
+    background-color: #9cacbf;
+}
+.gameBox{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0a1417;
+    font-size: 100px;
+    font-weight: 700;
+    background-color: #2b6684;
+    width: 95%; 
+    height: 95%;
+    border: 2px solid black;
+    border-radius: 10px;
+    cursor: default;
+}
+section {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+}
+.boardDisplay {
+    width: 500px;
+    height: 500px;
+    background-color: #032e42;
+}
+h1 {
+    color: #9cacbf;
+}
