@@ -70,7 +70,7 @@ const gameControl = (() => {
         if(roundNum < 9) {
             roundNum++;
         } else {
-            gameOver = true;
+            endGame('draw');
             console.log('Game Over');
         };
     };
@@ -82,7 +82,11 @@ const gameControl = (() => {
             box.classList.add('disabled');
         };
         const sayResult = document.querySelector('.result');
-        sayResult.textContent = `Player ${winner} is the champion!`;
+        if (winner === 'X' || winner === 'O'){
+            sayResult.textContent = `Player ${winner} is the champion!`;
+        } else if (winner === 'draw') {
+            sayResult.textContent = `It's a ${winner}!`;
+        }
     };
 
     const checkWins = (board) => {
@@ -94,6 +98,8 @@ const gameControl = (() => {
             } else if (board[a] === 'O' && board[b] === 'O' && board[c] === 'O'){
                 console.log('O is the winner');
                 endGame('O');
+            } else if (roundNum === 10) {
+                endGame('draw');
             };
         });
     };
