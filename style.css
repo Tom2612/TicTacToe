@@ -11,6 +11,7 @@ body{
     background-color: #032e42;
 }
 #playerInputs{
+    display: none;
     background-color: #9cacbf;
 }
 .gameBox{
@@ -43,4 +44,27 @@ section {
 }
 h1 {
     color: #9cacbf;
+}
+.disabled {
+    pointer-events: none;
+}
+.currentPlayerDisplay {
+    margin: 20px;
+    color: #9cacbf;
+    font-size: 3rem;
+}
+.result {
+    margin: 50px;
+    color: #9cacbf;
+    font-size: 4rem;
+}
+#restart {
+    width: 300px;
+    font-family: inherit;
+    font-size: 2rem; 
+    border-radius: 500px;
+    background-color: #032e42;
+    border: 2px solid #9cacbf;
+    color: #9cacbf;
+    cursor: pointer;
 }
