@@ -98,8 +98,6 @@ const gameControl = (() => {
             } else if (board[a] === 'O' && board[b] === 'O' && board[c] === 'O'){
                 console.log('O is the winner');
                 endGame('O');
-            } else if (roundNum === 10) {
-                endGame('draw');
             };
         });
     };
